@@ -1,0 +1,803 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    transition: all .2s ease-in-out;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 3808px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    border-bottom: 151px solid rgb(245, 245, 245);
+}
+
+/* CONTAINER STYLES */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* HEADER AREA STYLES */
+.header {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_logo {
+    margin-bottom: 3.25rem;
+}
+
+.header_info {
+    width: 690px;
+    margin-bottom: 9.38rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header_info_title {
+    margin-bottom: 1rem;
+    font-size: 2.83rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.header_info_parag {
+    font-size: 1.25rem;
+    line-height: 1.85rem;
+    font-weight: 200;
+    letter-spacing: .027rem;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.header_info_download {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3.1rem 0 0 0;
+}
+
+.header_info_download_btn {
+    width: 227px;
+    height: 55px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border: none;
+    border-radius: 55px;
+    font-size: 1.12rem;
+    letter-spacing: .05rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: var(--strong-cyan);
+    border-bottom: 3px solid hsl(171, 65%, 37%);
+    box-shadow: 0 12px 20px rgba(45, 203, 179, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+.header_info_download_btn:last-of-type {
+    background-color: var(--light-blue);
+    border-bottom: 3px solid hsl(233, 61%, 57%);
+    box-shadow: 0 12px 20px hsl(233, 100%, 69%, 0.25);
+}
+
+.header_info_download_btn:hover,
+.download_area_btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.header_info_footer {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_info_footer_title {
+    margin-bottom: 1.29rem;
+    font-size: 2.22rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.header_info_footer_parag {
+    font-size: 1.115rem;
+    line-height: 1.85rem;
+    font-weight: 200;
+    letter-spacing: .027rem;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+/* HERO IMAGE AND INFO AREA STYLES */
+.hero_area {
+    width: 100%;
+    height: 575px;
+    margin-bottom: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_area_img {
+    width: 50%;
+    height: 572px;
+    position: absolute;
+    left: 0;
+    background-image: url(images/image-computer.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+}
+
+.hero_area_img:hover {
+    transform: scale(1.08);
+}
+
+.hero_area_items {
+    width: 50%;
+    margin-left: auto;
+    padding: 4.25rem 6.9rem;
+    transition: all .3s ease-in-out;
+}
+
+.hero_area_item1,
+.hero_area_item2 {
+    margin-bottom: 3.5rem;
+}
+
+.hero_area_item_title {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    font-size: 1.48rem;
+    color: var(--dark-grayish-blue);
+}
+
+.hero_area_item_parag {
+    width: 100%;
+    max-width: 350px;
+    font-weight: 300;
+    line-height: 1.88rem;
+    letter-spacing: 0.014rem;
+    color: var(--grayish-blue);
+}
+
+/* CENTRAL IMAGE AND INFO STYLES */
+.central_image_area {
+    width: 100%;
+    height: 710px;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.central_image_area_title {
+    margin-bottom: 1.2rem;
+    font-size: 2.22rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.central_image_area_parag {
+    width: 680px;
+    margin-bottom: 6.2rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    letter-spacing: 0.025rem;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.central_image_area_img {
+    margin-left: 4px;
+    transition: all .3s ease-in-out;
+}
+
+.central_image_area_img:hover {
+    transform: scale(1.08);
+}
+
+/* SPECS AREA INFO STYLES */
+.specs_area {
+    width: 100%;
+    height: 375px;
+    margin-bottom: 10.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.specs_area_info {
+    margin-bottom: 4.7rem;
+    text-align: center;
+}
+
+.specs_area_info_title {
+    margin-bottom: 1.2rem;
+    font-size: 2.22rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.specs_area_info_subtitle {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.88rem;
+    letter-spacing: 0.014rem;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.specs_area_items {
+    width: 77.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specs_area_item1,
+.specs_area_item2,
+.specs_area_item3 {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.specs_area_item1_img {
+    margin-bottom: 2.28rem;
+}
+
+.specs_area_item2_img,
+.specs_area_item3_img {
+    margin-bottom: 2.5rem;
+}
+
+.specs_area_item1_img img {
+    margin-top: -4px;
+    margin-left: -2px;
+}
+
+.specs_area_items_info_title {
+    margin-bottom: 1rem;
+    font-size: 1.48rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+}
+
+.specs_area_items_info_parag {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.85rem;
+    letter-spacing: 0.01rem;
+    color: var(--grayish-blue);
+}
+
+/* LOGOTYPES AREA STYLES */
+.logos_area {
+    width: 90%;
+    max-width: 1110px;
+    margin-bottom: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+
+.logos_area_img {
+    transition: all .2s ease-in-out;
+}
+
+.logos_area_img:hover {
+    transform: scale(1.15);
+}
+
+/* DOWNLOAD AREA STYLES */
+.download_area {
+    width: 100%;
+    margin-bottom: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.download_area_title {
+    margin-bottom: 1.3rem;
+    font-size: 2.22rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.download_area_parag {
+    width: 680px;
+    margin-bottom: 2.9rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    letter-spacing: 0.025rem;
+    color: var(--grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.download_area_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+
+.download_area_btn {
+    width: 227px;
+    height: 55px;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border: none;
+    border-radius: 55px;
+    font-size: 1.12rem;
+    letter-spacing: .05rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    background-color: var(--strong-cyan);
+    border-bottom: 3px solid hsl(171, 65%, 37%);
+    box-shadow: 0 12px 20px rgba(45, 203, 179, 0.25);
+    transition: all .3s ease-in-out;
+}
+
+.download_area_btn:last-of-type {
+    background-color: var(--light-blue);
+    border-bottom: 3px solid hsl(233, 61%, 57%);
+    box-shadow: 0 12px 20px hsl(233, 100%, 69%, 0.25);
+}
+
+/* FOOTER AREA STYLES */
+.footer {
+    width: 100%;
+    height: 150px;
+    margin-top: auto;
+    padding: 0 10.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    transition: all .3s ease-in-out;
+}
+
+.footer_logo_img {
+    width: 55px;
+    height: 55px;
+}
+
+.footer_menu {
+    width: 51%;
+    height: 85px;
+    margin-left: 8.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.025rem;
+    text-align: left;
+    color: var(--dark-grayish-blue);
+}
+
+.footer_menu li {
+    width: 33%;
+    transition: all .2s ease-in-out;
+}
+
+.footer_menu li a:hover {
+    color: var(--strong-cyan);
+}
+
+.footer_rrss {
+    width: 120px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 1.75rem;
+    color: var(--dark-grayish-blue);
+    transition: all .3s ease-in-out;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    color: var(--strong-cyan);
+}
+
+.fa-square-facebook {
+    font-size: 1.77rem;
+}
+
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+/***** MEDIA QUERY *****/
+@media screen and (max-width: 1180px) {
+
+    .footer {
+        padding: 0 5rem;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+    body {
+        height: fit-content;
+        border: none;
+    }
+
+    .header_info {
+        width: 75%;
+    }
+
+    .header_info_footer {
+        width: 75%;
+    }
+
+    .hero_area {
+        margin-bottom: 5rem;
+    }
+
+    .hero_area_img {
+        background-size: contain;
+        margin-left: 1.5rem;
+    }
+
+    .hero_area_items {
+        padding: 4.25rem 1.5rem 4.25rem 3.5rem;
+    }
+
+    .central_image_area {
+        width: 75%;
+        height: 650px;
+        margin-bottom: 5rem;
+    }
+
+    .central_image_area_img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .central_image_area_parag {
+        width: 100%;
+    }
+
+    .specs_area_items {
+        width: 92%;
+    }
+
+    .specs_area_item1,
+    .specs_area_item2,
+    .specs_area_item3 {
+        width: 30%;
+    }
+
+    .logos_area {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos_area_img {
+        margin: 1.5rem;
+    }
+
+    .download_area {
+        width: 75%;
+    }
+
+    .download_area_parag {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 0 2.5rem;
+    }
+
+    .footer_menu {
+        width: 70%;
+        margin-left: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        margin-bottom: 8rem;
+    }
+
+    .header_info {
+        width: 75%;
+        margin-bottom: 5rem;
+    }
+
+    .hero_area {
+        height: 800px;
+        margin-bottom: 10rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_area_img {
+        width: 85%;
+        margin: 0 auto 5rem auto;
+        position: relative;
+        background-position: center;
+    }
+
+    .hero_area_items {
+        width: 83%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .central_image_area {
+        margin-bottom: 0;
+    }
+
+    .specs_area {
+        height: fit-content;
+        margin-bottom: 6rem;
+    }
+
+    .specs_area_info {
+        width: 75%;
+    }
+
+    .specs_area_items {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .specs_area_item1,
+    .specs_area_item2,
+    .specs_area_item3 {
+        width: 320px;
+        margin: 3rem 0;
+    }
+
+    .logos_area {
+        height: 600px;
+        margin-bottom: 8rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer {
+        height: 500px;
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+    .footer_menu {
+        width: 100%;
+        height: 300px;
+        margin: .5rem 0 4rem 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .footer_menu li {
+        width: fit-content;
+    }
+
+    .footer_rrss {
+        width: 150px;
+        margin: 0;
+    }
+
+    .footer_menu li:nth-child(1) {
+        order: 1;
+    }
+
+    .footer_menu li:nth-child(2) {
+        order: 3;
+    }
+
+    .footer_menu li:nth-child(3) {
+        order: 5;
+    }
+
+    .footer_menu li:nth-child(4) {
+        order: 2;
+    }
+
+    .footer_menu li:nth-child(5) {
+        order: 4;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+
+    .header_info_download,
+    .download_area_buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_info_download_btn,
+    .download_area_btn {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    body {
+        background-image: url(images/bg-header-mobile.png);
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        padding-top: 7.75rem;
+    }
+
+    .header {
+        margin-bottom: 0rem;
+    }
+
+    .header_logo {
+        margin-bottom: 3.7rem;
+    }
+
+    .header_info {
+        width: 84%;
+        margin-bottom: 8.5rem;
+    }
+
+    .header_info_title {
+        font-size: 2rem;
+    }
+
+    .header_info_parag {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .header_info_download {
+        margin: 3.1rem 0 0 0;
+    }
+
+    .header_info_footer {
+        width: 81%;
+    }
+
+    .header_info_footer_title {
+        font-size: 1.7rem;
+    }
+
+    .header_info_footer_parag {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .hero_area {
+        margin-bottom: 12rem;
+    }
+
+    .hero_area_item1,
+    .hero_area_item2 {
+        margin-bottom: 2.7rem;
+    }
+
+    .hero_area_img {
+        margin: 0 auto;
+    }
+
+    .hero_area_item_parag {
+        line-height: 1.7rem;
+    }
+
+    .central_image_area {
+        width: 89%;
+        height: 530px;
+    }
+    
+    .central_image_area_title {
+        font-size: 1.75rem;
+    }
+
+    .central_image_area_parag {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 3rem;
+    }
+
+    .specs_area_info {
+        margin-bottom: 4rem;
+    }
+
+    .specs_area_info_title {
+        font-size: 1.65rem;
+        margin-bottom: .5rem;
+    }
+
+    .specs_area_info_subtitle {
+        font-size: 1rem;
+    }
+
+    .specs_area_item1,
+    .specs_area_item2,
+    .specs_area_item3 {
+        margin: 2rem 0;
+    }
+
+    .download_area {
+        width: 85%;
+    }
+
+    .download_area_title {
+        font-size: 1.7rem;
+    }
+
+    .download_area_parag {
+        font-size: 1rem;
+    }
+
+}
